@@ -1,7 +1,8 @@
-// var sekigae = require('sekigae');
+var sekigae = require('sekigae');
+var my_val = 'hey, siri';
+console.log(sekigae.my_func2); // DOES NOT WORK
 
 exports.helloWorld = function helloWorld(req, res) {
-  var sekigae = require('sekigae');
-  console.log(sekigae.my_func2);
-  res.send(sekigae.my_func2);
+  console.log(sekigae.my_func2); // DOES NOT WORK
+  res.send(my_val); // WORK
 };
