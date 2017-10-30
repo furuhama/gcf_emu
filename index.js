@@ -1,10 +1,10 @@
 'use strict';
 
-var sekigae = require('sekigae');
+var Sekigae = require('sekigae');
+var s = new Sekigae();
 
 exports.helloWorld = function helloWorld(req, res) {
-
-  console.log(sekigae.my_func); // WORK
-  console.log(sekigae.my_func2); // WORK
-  res.send(sekigae.my_func2); // WORK
+  console.log(s.my_func); // WORK
+  // console.log(Sekigae.my_func2); // WORK
+  res.send(s.my_func); // NOT WORK
 };
