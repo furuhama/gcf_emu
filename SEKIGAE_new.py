@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import json
-import os
+# import json
+# import os
 import random
 import datetime
 # import requests
@@ -212,11 +212,11 @@ if __name__ == '__main__':
     # 送信
     # 休日は画像なしで送る
     if str_time_now in load_holiday_dict('holiday_lists.yaml') or weeknum == 5 or weeknum == 6:
-        # send_bot_message_without_image(set_todays_icon(), todays_text, SLACK_URL)
-        print(todays_text)
+        send_bot_message_without_image(set_todays_icon(), todays_text, SLACK_URL)
+        print('hello from python')
 
     # それ以外は画像ありで送る
     else :
-        # send_bot_message_with_image(set_todays_icon(), todays_text, OFFICE_IMAGE_URL, SLACK_URL)
-        print(todays_text)
+        send_bot_message_with_image(set_todays_icon(), todays_text, OFFICE_IMAGE_URL, SLACK_URL)
+        print('hello from python')
 
