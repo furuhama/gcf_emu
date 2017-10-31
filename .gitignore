@@ -1,4 +1,5 @@
 .vscode
 .DS_Store
 name_list_*.yaml
+.envrc
 
