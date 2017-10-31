@@ -3,14 +3,13 @@
 var Sekigae = require('sekigae');
 var s = new Sekigae();
 
-// exports.helloWorld = function helloWorld(req, res) {
-//   console.log(s.my_func1()); // WORK
-//   console.log(s.my_func2()); // WORK
-//   console.log(Sekigae.my_func3) // WORK
-//   res.send(s.my_func1()); // WORK
-// };
-
 exports.helloWorld = function helloWorld(req, res) {
-  console.log(s.date);
-  res.send(s.getRandomArray(10));
-}
+  if (s.checkHoliday()) {
+    res.send('It is holiday!!');
+  } else {
+    var memberList = s.getYaml(s.yamlName);
+    var randomArray = s.getRandomArray(15);
+
+    res.send(s.setMemberDeskHash(memberList, randomArray));
+  };
+};
