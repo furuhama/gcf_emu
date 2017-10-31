@@ -11,5 +11,7 @@ var s = new Sekigae();
 // };
 
 exports.helloWorld = function helloWorld(req, res) {
+  console.log(s.getYaml('name_list_1.yaml'));
+  console.log(s.getYaml('name_list_2.yaml'));
   res.send(s.getToday(0));
 };
