@@ -11,5 +11,6 @@ var s = new Sekigae();
 // };
 
 exports.helloWorld = function helloWorld(req, res) {
+  console.log(s.date);
   res.send(s.getRandomArray(10));
 }
