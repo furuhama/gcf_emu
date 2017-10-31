@@ -1,0 +1,19 @@
+# write down the daily logic
+#
+# (format)
+# [dayNumber]: [memberList]
+#
+# (example)
+# 0: 'name_list_1.yaml'
+#
+# 0 means Sunday,
+# 1 means Monday,
+# ....
+# 6 means Saturday
+
+1: 'name_list_1.yaml'
+2: 'name_list_1.yaml'
+3: 'name_list_1.yaml'
+4: 'name_list_2.yaml'
+5: 'name_list_2.yaml'
+
